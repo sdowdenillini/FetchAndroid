@@ -24,14 +24,6 @@
         android:layout_below="@id/listIDBtn"
         />
 
-    <Button
-        android:id="@+id/filterBlankBtn"
-        android:text="Filter Blank Names"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5px"
-        android:layout_below="@id/nameBtn"
-        />
 
     <Button
         android:id="@+id/originalTextBtn"
@@ -39,12 +31,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5px"
-        android:layout_below="@id/filterBlankBtn"
+        android:layout_below="@id/nameBtn"
         />
 
     <TextView
         android:id="@+id/textBox"
-        android:text="Hello World!"
+        android:text="Click a Button!"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/originalTextBtn"
