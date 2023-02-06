@@ -6,12 +6,18 @@ android {
     namespace 'com.example.fetchandroidapplication'
     compileSdk 32
 
+    useLibrary 'org.apache.http.legacy'
+    buildToolsVersion "23.0.2"
+
+
     defaultConfig {
         applicationId "com.example.fetchandroidapplication"
         minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,4 +42,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+}
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.encoding = 'UTF-8'
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
 }
