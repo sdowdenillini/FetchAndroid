@@ -195,6 +195,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Converted the original list to be ordered by name.
+    //The addAll method was not working on the arrayLists.
     private void listIDToName(ArrayList<String> input) {
         String[] list1 = new String[input.size()];
         String[] list2 = new String[input.size()];
