@@ -195,8 +195,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Converted the original list to be ordered by name.
-    //I was originally going to go from ID to name, but it was easier to go order by ID and name at the same time.
-    //Although it makes the function longer, it was easier on my end to read when I created it.
     private void listIDToName(ArrayList<String> input) {
         String[] list1 = new String[input.size()];
         String[] list2 = new String[input.size()];
